@@ -2,7 +2,7 @@
 
 // Deklaration
 let ageJohn, ageMark;
-const birthYearJohn = 1980;
+const birthYearJohn = 1990;
 const birthYearMark = 1990;
 
 // Berechnung Alter
@@ -16,3 +16,11 @@ ageMark = year - birthYearMark
 console.log("ageJohn: " + ageJohn);
 console.log("ageMark: " + ageMark);
 // console.log("Datum. " + date);
+
+// Tests
+let isJohnOlder; // Is John older? ---> y/n ---> true | false
+isJohnOlder = (ageJohn > ageMark);
+let isJohnEqual = (ageJohn == ageMark);
+
+console.log("isJohnOlder: " + isJohnOlder)
+console.log("isJohnEqual: " + isJohnEqual)
