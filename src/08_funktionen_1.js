@@ -3,7 +3,7 @@
 
 
 // Funktionsaufruf | call
-test();
+// test();
 
 
 //Funktionsrumpf | callee
@@ -13,3 +13,19 @@ function test()
 {
 console.log("Hallo zusammen!");
 }
+
+
+/***** Funktionen 02a *****/
+// 2a. Parametrisierung + Datenübergabe von INNEN
+
+// ausgabeNamen (); // Call
+
+
+function ausgabeNamen() {
+       // interne Variable | What happens in VEGAS ...
+       let firstName = "Schüler"
+       console.log("Hallo, " + firstName + "!");
+}
+
+// console.log(firstName); // Fehler :  scope!
+
