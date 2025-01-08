@@ -74,10 +74,25 @@ function ausgabeNamenSRP(firstName, secondName) {
 
 /******   Funktionen 03b *******/
 
- // 2. Funktionalität: string output
+// 1. Funktionalität: string composing
+
+output(getString("Max","Mütze"));
+
+ function getString(firstName, secondName) {
+    
+        const GAP = " ";
+        let outputStr = "Hallo, "+ GAP + firstName + GAP + secondName + "!";
+        return outputStr; // return schickt die Daten an den Call ...
+        console.log("Hallo"); // return beendet die Funktion
+ }
+
+
+// 2. Funktionalität: string output
 // output ("hi");
 // output (2);
 // output(true);
 function output(outputData) {
     console.log(outputData)
 }
+
+
