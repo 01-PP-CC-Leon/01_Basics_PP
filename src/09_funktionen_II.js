@@ -4,11 +4,45 @@
 
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
+3. Fkt. Grundrechenarten : check !
 4. Ausgabe in Konsole : check !
 */
 
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich!"
+const ERROR_STR_CAL = "Irgendwas ging schief"
+
+// module: calculator | tests
+// agreement : "+","-","*",":","/"
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
+function calculator(a,b,op) {
+    switch (op) {
+        case "+": // addieren
+            return add(a,b);
+            
+        case "-":  // subtrahieren
+            return subtract(a,b);
+            
+        case "*":   // multiplizieren
+            return multiply(a,b);
+            
+        case ":":    // dividieren
+        case "/":    
+            return divide (a,b);
+        
+        default:
+            return "Irgendwas ging schief"
+
+    }
+}
+
+
+
 
 // module: division a / b |  test:
 // output(divide(4,2));
