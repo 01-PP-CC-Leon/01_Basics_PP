@@ -76,7 +76,7 @@ hier: Aufsummierung
 // for (let i = 0; i < 10; i++) {
 //    a += 1; // a = a + 1
 //    output("inhalt von a: " + a);
-}
+//}
 
 /*
 1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
@@ -145,3 +145,20 @@ function output(outputStr) {
     console.log(outputStr);
 }
 
+/*** 01b. Funktionalität mit Array 2  */
+// Transponierung:  untereinander ---> nebeneinander
+// Helge Schneider: Anananandereihung ...
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr2(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str =  "";
+
+    for (let i = 0; i < arr.length; i++) {
+       str += arr[i] + GAP;
+    }
+    
+    str = str + PUNCT
+
+    return str;
+}
