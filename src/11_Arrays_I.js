@@ -154,11 +154,24 @@ function getSentenceArr2(arr) {
     const PUNCT = ".";
     let str =  "";
 
+    // for (let i = 0; i < arr.length; i++) {
+    //    str += arr[i] + GAP;
+    // }
+    
+    // str = str + PUNCT
+
+    // return str;
+
+
+    // 2. Variante: Struktur erzeugen + trimmen()
     for (let i = 0; i < arr.length; i++) {
-       str += arr[i] + GAP;
+        str += arr[i] + GAP; // entweder ..
     }
     
-    str = str + PUNCT
+    return str.trim() + PUNCT;
 
-    return str;
+
+
 }
+
+
