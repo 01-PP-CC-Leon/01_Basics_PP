@@ -164,13 +164,24 @@ function getSentenceArr2(arr) {
 
 
     // 2. Variante: Struktur erzeugen + trimmen()
-    for (let i = 0; i < arr.length; i++) {
-        str += arr[i] + GAP; // entweder ..
-    }
+    // for (let i = 0; i < arr.length; i++) {
+    //     str += arr[i] + GAP; // entweder ..
+    // }
     
-    return str.trim() + PUNCT;
+    // return str.trim() + PUNCT;
 
-
+    function getSentence(arr)
+    {
+        const GAP = " ";
+        const PUNCT = ".";
+        let str = "";
+     for (let i = 0; i < arr.length-1; i++)
+        {
+        str += arr[i] + GAP;
+        }
+     str += arr[arr.length-1] + PUNCT;
+     output(str);
+    }
 
 }
 
