@@ -44,12 +44,53 @@
     
 
 /* 02b. For-Schleife für Array-Index (Iteration)*/
-let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
-for (let i = 0; i < arr.length; i++) 
-{
-   output(i); 
-   output(arr[i]);
+// let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+// for (let i = 0; i < arr.length; i++) 
+// {
+//    output(i); 
+//    output(arr[i]);
+// }
+
+
+/********* Überlegungen - Transponierung **********/
+
+/*
+1. Einer Variablen kann Ihr eigener Wert zugewiesen werden.
+Solange die Variable existiert, bleibt dieser erhalten.
+hier: Aufsummierung
+*/
+
+/* Zu "Fuß" - DRY !!! */
+// let a = 0; // Anfangswert
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 0 + 1
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 1 + 1
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 2 + 1
+// output("inhalt von a: " + a);
+
+/* Besser: mit FOR-Schleife */
+
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    a += 1; // a = a + 1
+//    output("inhalt von a: " + a);
 }
+
+/*
+1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
+Solange die Variable existiert, bleibt dieser erhalten
+hier: Verkettung eines Strings // Transponierung
+*/
+
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " "; // a = a + 1
+//    output(str);
+// }
+
+
 
 
 /**
