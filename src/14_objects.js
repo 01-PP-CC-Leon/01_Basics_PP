@@ -31,37 +31,60 @@ let arr;
 
 /***** Objekte 1 Daten/Funktionen *******/
 
-let person = {
+// let person = {
 
-                firstName: "Leon",
-                familyName: "Ahner",
-                salary: [120000, 160000],
-                sayHello: function() {
-                     return  "Hallo";
-                },
-                sayHello2: function() {
-                    return  "Hallo, ich bin " + this.firstName;
-               }         
-                };
-
-
+//                 firstName: "Leon",
+//                 familyName: "Ahner",
+//                 salary: [120000, 160000],
+//                 sayHello: function() {
+//                      return  "Hallo";
+//                 },
+//                 sayHello2: function() {
+//                     return  "Hallo, ich bin " + this.firstName;
+//                }         
+//                 };
 
 
 
 
 
 
-output(person);
-output(person.firstName);
-output(person.familyName);
-output(person.salary[1]);
-output(person.sayHello());
-output(person.sayHello2());
 
-const txt = person.sayHello() + ", ich bin " + person.firstName +
-            " und verdiene " + person.salary[1] + " p.a."
 
-output(txt);
+// output(person);
+// output(person.firstName);
+// output(person.familyName);
+// output(person.salary[1]);
+// output(person.sayHello());
+// output(person.sayHello2());
+
+// const txt = person.sayHello() + ", ich bin " + person.firstName +
+//             " und verdiene " + person.salary[1] + " p.a."
+
+// output(txt);
+
+/***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+// nested object {{{}}}
+
+let Baikal = {
+                value: "10m",
+                deep: {
+                    deeper: {
+                        deepest:"Das Licht-auf 1642m!",
+                        temperature: "4 Grad Celsius"
+                    }
+                }
+
+}
+
+output(Baikal);
+output(Baikal.value);
+output(Baikal.deep.deeper.deepest);
+output(Baikal.deep.deeper.temperature);
+
 
 
 
